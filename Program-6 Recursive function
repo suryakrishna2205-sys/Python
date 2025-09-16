@@ -1,0 +1,32 @@
+#factorial of a number 
+def factorial(n):
+    # Base case: factorial of 0 or 1 is 1
+    if n == 0 or n == 1:
+        return 1
+    else:
+        # Recursive case
+        return n * factorial(n - 1)
+
+# Taking input from the user
+num = int(input("Enter a number: "))
+
+# Checking for negative input
+if num < 0:
+    print("Factorial does not exist for negative numbers.")
+else:
+    print(f"The factorial of {num} is {factorial(num)}")
+
+#PALLINDROME
+def is_palindrome(s):
+    if len(s) <= 1:
+        return True
+    elif s[0] != s[-1]:
+        return False
+    else:
+        return is_palindrome(s[1:-1])
+
+text = input("Enter a string: ")
+if is_palindrome(text.lower()):  # Convert to lowercase for case-insensitive check
+    print("The string is a palindrome.")
+else:
+    print("The string is not a palindrome.")

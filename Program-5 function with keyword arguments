@@ -1,0 +1,24 @@
+syntax
+def function_name(param1, param2, ...):
+    # Function body
+    statements
+    return value  
+
+#student report using keyword arguments
+def student_report(name, grade, subject="Math", marks=0):
+    print("\nStudent Report")
+    print(f"Name: {name}")
+    print(f"Subject: {subject}")
+    print(f"Grade: {grade}")
+    print(f"Marks: {marks}")
+
+    if marks >= 50:
+        print("Status: Pass")
+    else:
+        print("Status: Fail")
+    print("------------------")
+
+# Calling functions using keyword arguments
+student_report(name="Alice", grade="5th", subject="Science", marks=78)
+student_report(grade="6th", name="Bob", marks=45)
+student_report(name="Charlie", grade="8th")  # Uses default values (subject="Math", marks=0)

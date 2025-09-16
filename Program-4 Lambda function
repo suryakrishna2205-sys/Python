@@ -1,0 +1,39 @@
+LAMBDA FUNCTION 
+
+
+# (i) Addition of two numbers
+add = lambda x, y: x + y
+print(add(4, 5))
+
+# (ii) Square of a number
+square = lambda x: x * x
+print(square(5))
+
+# (iii) Using Lambda with map()
+n = [4, 6, 8, 9, 2]
+squared = list(map(lambda x: x * x, n))
+print(squared)
+
+# (iv) Using Lambda with filter()
+n = [4, 6, 1, 3, 8, 9, 2]
+evens = list(filter(lambda x: x % 2 == 0, n))
+print(evens)
+
+# (v) Using Lambda with map() for even check
+n = [4, 6, 1, 3, 8, 9, 2]
+even_check = list(map(lambda x: x % 2 == 0, n))
+print(even_check)
+
+
+
+
+
+nums = [4, 6, 1, 3, 8, 9, 2]
+print(sorted(nums))  # Sorts numbers in ascending order
+print(sorted(nums, reverse=True))  # Sorts numbers in descending order
+
+fruits = ["Apple", "Orange", "Grapes", "Banana"]
+print(sorted(fruits))  # Sorts strings alphabetically A-Z
+
+mixed = ["Kiwi", "Apple", "Orange", "Banana", "Grapes", "Watermelon", "Jackfruit"]
+print(sorted(mixed, key=len))  # Sorts by word length (shortest first)

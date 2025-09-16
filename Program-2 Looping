@@ -1,0 +1,24 @@
+LOOPING
+
+#syntax 
+1.for variable in sequence:
+    # Statement(s) to execute
+2.while condition:
+    # Statement(s) to execute
+
+#reverse a number
+n = int(input("Enter a number: "))  # Fix: Corrected "Pnt" to "int" and "Pnput" to "input"
+s = 0
+
+while n != 0:  # Fix: Corrected "while n! 0 = 0" to "while n != 0"
+    remainder = n % 10  # Fix: Corrected "97% 10" to "remainder = n % 10"
+    s = s * 10 + remainder  # Fix: Corrected "S=8#10tr" to "s = s * 10 + remainder"
+    n = n // 10  # Fix: Kept correct (n = n // 10)
+
+print("Reverse of the number:", s)  # Fix: Corrected "5" to "s"
+
+
+
+#table
+for i in range(1,11):
+print("2","*",i,"=",i*2)

@@ -1,0 +1,23 @@
+student = []
+student.append("any name")
+student.append("any name")
+student.append("any name")
+student.append("any name")
+for i in student:
+    print(i)
+student.insert(1, "any name")
+print(student)
+student.remove("any name")
+print(student)
+student.sort()
+print(student)
+
+for i in student:
+    print(i)
+a = input("Enter the name: ")
+for i in student:
+ if i == a:
+        print("The name is present in the list")
+        break
+ else:
+    print("The name is not present in the list")

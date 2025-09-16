@@ -1,0 +1,32 @@
+#DEFAULT ARGS
+#arthmetic operations 
+def calculate(a, b, operation="add"):
+    if operation == "add":
+        return a + b
+    elif operation == "sub":
+        return a - b
+    elif operation == "mul":
+        return a * b
+    elif operation == "div":
+        return a / b
+    elif operation == "mod":
+        return a % b
+    else:
+        print("Unknown operation")
+
+print(calculate(5, 2))                     
+print(calculate(5, 2, "sub"))             
+print(calculate(5, 2, "mul"))             
+print(calculate(5, 2, "div"))             
+print(calculate(5, 2, "mod"))             
+print(calculate(5, 2, "dis"))    
+
+
+#data usage tracker
+def datausage(name, data_used, limit=2):
+    if data_used > limit:
+        print(name, "Your limit is exceeded")
+    else:
+        print(name, "Your limit is not exceeded")
+
+datausage("name", 2.5, 3)
